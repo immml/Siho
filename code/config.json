@@ -1,0 +1,58 @@
+{
+  "actions": [
+    {
+      "pin": "GP0",
+      "type": "key",
+      "action": "click",
+      "key": "LEFT_BUTTON"
+    },
+    {
+      "pin": "GP1",
+      "type": "key",
+      "action": "hold",
+      "key": "A"
+    },
+    {
+      "pin": "GP2",
+      "type": "key",
+      "action": "hold",
+      "key": "D"
+    },
+    {
+      "pin": "GP3",
+      "type": "key",
+      "action": "send",
+      "key": "ZERO"
+    },
+    {
+      "pin": "GP18",
+      "type": "macro",
+      "steps": [
+        {"type": "keys", "keys": ["LEFT_GUI", "R"], "delay": 0.5},
+
+
+        {"type": "text", "text": "cmd", "char_delay": 0.1},
+
+        {"type": "keys", "keys": ["CTRL", "SPACE"], "delay": 0.5},
+
+        {"type": "keys", "keys": ["ENTER"], "delay": 1.0},
+
+        {"type": "text", "text": "start  https://www.bilibili.com/video/av546403908", "char_delay": 0.05},
+
+        {"type": "keys", "keys": ["ENTER"], "delay": 0.5},
+        
+        {"type": "wait", "delay": 1},
+
+        {"type": "keys", "keys": ["ENTER"], "delay": 0.5},
+
+        {"type": "wait", "delay": 1},
+
+        {"type": "keys", "keys": ["ENTER"], "delay": 0.5},
+
+        {"type": "wait", "delay": 1},
+
+        {"type": "keys", "keys": ["ENTER"], "delay": 0.5}
+      ]
+    }
+  ]
+}
